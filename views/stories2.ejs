@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/cebc5b7003.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <nav>
+        <li><a href="/">Home</a></li>
+        <li><a href="/stories">Stories</a></li>
+        <li><a href="/new">Share</a></li>
+        <li><a href="#">Contact Us</a></li>
+        <li><a href="/logout">Logout</a></li>
+        <li id="ham"><i class="fas fa-bars"></i></li>
+    </nav>
+    <img id="loo" src="logo1.png">
+    <div>d</div>
+
+    <div id="collapsed">
+        <li><i class="fas fa-times"></i><a href="/">Home</a></li>
+        <li><a href="/stories">Stories</a></li>
+        <li><a href="/new">Share</a></li>
+        <li><a href="#">Contact Us</a></li>
+        <li><a href="/logout">Logout</a></li>
+    </div>
+    <% if(message != ''){ %>
+        <div class="container" style="padding-top: 16px; text-align: center; position: absolute; top: 50px;">
+            <div class="alert alert-danger" role="alert"> <%= message %></div>
+        </div>    
+    <% } %>
+    <% if(success != ''){ %>
+        <div class="container" style="padding-top: 16px; text-align: center; position: absolute; top: 50px;">
+            <div class="alert alert-danger" role="alert"> <%= message %></div>
+        </div>    
+    <% } %>
+    
+    <!-- <div>hg</div> -->
+    <header class="head">
+    <h1>Get Inspired By These Amazing People</h1>
+    <p>Learn how they lived their lives, became successful even in the times of difficulties and overcame every obstacle.These people have inspired others by their various achievements, but also by their attitude and values.</p>
+    </header>
+    <ul id="grid2">
+        <% blogs.forEach(function(blog){ %>
+            <li>
+                <div class="hexagon2" style="background-image:linear-gradient(rgba(29, 28, 28, 0.315), rgba(29, 28, 28, 0.315)), url(<%=blog.image%>);">
+                <a href="/stories/<%=blog._id%>"><%=blog.name%></a>
+                </div>
+            </li>
+        <% }) %>
+    </ul>
+    <br/>
+        <div id="last">
+            <div id="end">
+                <p>Follow Us On </p>
+                <i class="fab fa-facebook-square fa-lg"></i><i class="fab fa-twitter fa-lg"></i><i class="fab fa-pinterest fa-lg"></i>
+            </div>
+        </div>
+    
+    <script src="jsstories.js"></script>
+</body>
+</html>

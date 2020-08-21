@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="semantic.min.css"> -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/cebc5b7003.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="index.css">
+
+</head>
+<body>
+    <nav>
+        <li><a href="/">Home</a></li>
+        <li><a href="/stories">Stories</a></li>
+        <li><a href="/stories/share">Sign up</a></li>
+        <li><a href="#">Contact Us</a></li>
+        <li><a href="/login">Login</a></li>
+        <li id="ham"><i class="fas fa-bars"></i></li>
+    </nav>
+    
+    <img id="loo" src="logo1.png" width="300px">
+    <div>hg</div>
+    <div id="collapsed">
+        <li><i class="fas fa-times"></i><a href="/">Home</a></li>
+        <li><a href="/stories">Stories</a></li>
+        <li><a href="/stories/share">Sign up</a></li>
+        <li><a href="#">Contact Us</a></li>
+        <li><a href="/login">Login</a></li>
+    </div>
+    <% if(message != ''){ %>
+        <div class="flash">
+            <div class="alert alert-warning" role="alert"> <%= message %></div>
+        </div>    
+    <% } %>
+    <div id="greet">
+       Good <span id="time">Morning!</span>
+    </div>
+    <div id="para">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim saepe sint cum animi deleniti alias 
+        nam nostrum voluptatem, esse aperiam ratione consectetur qui sapiente, placeat velit ad. Soluta, iusto 
+        tempora! Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium voluptatibus eveniet neque, 
+        animi officiis nam. Obcaecati debitis praesentium, recusandae vel ipsa nesciunt ad, quasi numquam enim 
+        aliquid fugiat modi ab.
+    </div>
+    <div id="sent">They changed the world for better..</div>
+    <div id="num">
+        <div id="first">
+            <img class="imo" src="eid.jpg">
+            <div class="card-bod">
+                <h5 class="card-titlee">Abdul Sattar Edhi</h5>
+                <p class="card-tex"> Abdul Sattar Edhi was a Pakistani philanthropist who built a nationwide network 
+                    of humanitarian centres offering a wide range of life-saving services to the people of Pakistan. 
+                    Edhi began his humanitarian work in 1947, soon after partition, with just $500.</p>
+                <a href="#" class="">Read More</a>
+            </div>
+        </div>
+        <div id="second">
+            <img class="imo" src="diana.jpg">
+            <div class="card-bod">
+                <h5 class="card-titlee">Princess Diana</h5>
+                <p class="card-tex">Diana, Princess of Wales, was the first wife of Prince Charles. The pair married at St Paul's Cathedral in 1981, where the royal bride wowed in a wedding dress by David and Elizabeth Emanuel. Charles and Diana became parents to Prince William in 1982 and Prince Harry in 1984. The couple separated in 1992, finalising their divorce four years later.</p>
+                <a href="#" class="">Read More</a>
+            </div>
+        </div>
+        <div id="third">
+            <img class="imo" src="elon.jpg">
+            <div class="card-bod">
+                <h5 class="card-titlee">Elon Musk</h5>
+                <p class="card-tex">Elon Reeve Musk is a South African-born American entrepreneur and businessman who founded X.com in 1999 (which later became PayPal), SpaceX in 2002 and Tesla Motors in 2003. Musk became a multimillionaire in his late 20s when he sold his start-up company, Zip2, to a division of Compaq Computers. </p>
+                <a href="#" class="">Read More</a>
+            </div>
+        </div>
+        <div id="fourth">
+            <img class="imo" src="nel.jpg">
+            <div class="card-bod">
+                <h5 class="card-titlee">Nelson Mandela</h5>
+                <p class="card-tex">Nelson Mandela is considered by many to be the father of South Africa. Mandela was an anti-Apartheid activist, which means that fought for those who were disadvantaged by the system of racial segregation. Mandela became a civil rights leader, leading many against the Apartheid government.
+                </p>
+                <a href="#" class="">Read More</a>
+            </div>
+        </div>
+    </div>
+        
+    <div id="pics">
+        <div id="one">
+            <!-- <img src="pic-15.jpg"> -->
+        </div>
+        <div id="two">
+            <!-- <img src="pic-3.jpg"> -->
+        </div>
+        <div id="three">
+            <!-- <img src="pic-13.jpg"> -->
+        </div>
+        <div id="four">
+               BE YOUR OWN <br><strong>INSPIRATION</strong>
+            <!-- <img src="pic-3.png"> -->
+        </div>
+        <div id="five">
+            <!-- <img src="pic-8.jpg"> -->
+        </div>
+    </div>
+
+    
+    <div id="see"><a href="/stories" style="color:red">See more storties..</a></div>
+    <p id="quotebegin">Inspiring Quotes By Famous People</p>
+    <div id="sign">
+        <i class="fas fa-arrow-circle-right fa-5x"></i><i class="fas fa-arrow-circle-left fa-5x"></i>
+        <div id="control">
+            <div id="extend">
+                <div class="quote fir">
+                    <img class="quotepic" src="nel.jpg">
+                    <blockquote cite="https://wisdomquotes.com/famous-quotes/">
+                        <p>It always seems impossible until it’s done.</p>
+                        <footer>—Nelson Mandela <cite></cite></footer>
+                    </blockquote>
+                    
+                </div>
+                <div class="quote">
+                    <img class="quotepic" src="albi.jpg">
+                    <blockquote cite="https://wisdomquotes.com/famous-quotes/">
+                        <p>Try not to become a man of success but rather to become a man of value.</p>
+                        <footer>—Albert Einstein <cite></cite></footer>
+                    </blockquote>
+                </div>
+                <div class="quote">
+                    <img class="quotepic" src="elvi.jpg">
+                    <blockquote cite="https://wisdomquotes.com/famous-quotes/">
+                        <p>It’s not how much you have that makes people look up to you, it’s who you are.</p>
+                        <footer>—Elvis Presley <cite></cite></footer>
+                    </blockquote>
+                </div>
+                <div class="quote">
+                    <img class="quotepic" src="lee.jpg">
+                    <blockquote cite="https://wisdomquotes.com/famous-quotes/">
+                        <p>I fear not the man who has practiced 10,000 kicks once, but I fear the man who has practiced one kick 10,000 times.</p>
+                        <footer>—Bruce Lee <cite></cite></footer>
+                    </blockquote>
+                </div>
+                <div class="quote">
+                    <img class="quotepic" src="frank.jpg">
+                    <blockquote cite="https://wisdomquotes.com/famous-quotes/">
+                        <p>God helps those that help themselves.</p>
+                        <footer>—Benjamin Franklin <cite></cite></footer>
+                    </blockquote>
+                </div>
+                <div class="quote check">
+                    <img class="quotepic" src="ela.jpg">
+                    <blockquote cite="https://wisdomquotes.com/famous-quotes/">
+                        <p>The future belongs to those who believe in the beauty of their dreams.</p>
+                        <footer>—Eleanor Roosevelt <cite></cite></footer>
+                    </blockquote>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="pcont">
+    <div class="container">
+        <h3>Share with us new stories of inspiring people around you</h3>
+        <form action="/stories/share" method="POST">
+            <div class="form-group">
+              <label for="exampleInputEmail1">Username</label>
+              <input type="text" name="username" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required>
+              <small id="emailHelp" class="form-text text-muted">We'll never share your information with anyone else.</small>
+            </div>
+            <div class="form-group">
+              <label for="exampleInputPassword1">Password</label>
+              <input type="password" name="password" class="form-control" id="exampleInputPassword1" required>
+            </div>
+            <button type="submit" class="btn btn-dark">Sign up</button>
+          </form>
+    </div>
+    </div>
+    <br/>
+    <br/>
+    <div id="last">
+        <div id="end">
+            <p>Follow Us On </p>
+            <i class="fab fa-facebook-square fa-lg"></i><i class="fab fa-twitter fa-lg"></i><i class="fab fa-pinterest fa-lg"></i>
+        </div>
+    </div>
+
+    <script src="indi.js"></script>
+</body>
+</html>

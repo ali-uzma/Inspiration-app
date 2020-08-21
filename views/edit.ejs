@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/cebc5b7003.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="/index.css">
+</head>
+<body>
+    <nav>
+        <li><a href="/">Home</a></li>
+        <li><a href="/stories">Stories</a></li>
+        <li><a href="#">Contact Us</a></li>
+        <li><a href="/logout">Logout</a></li>
+        <li id="ham"><i class="fas fa-bars"></i></li>
+    </nav>
+    <img id="loo" src="/logo1.png">
+    <div>d</div>
+
+    <div id="collapsed">
+      <li><i class="fas fa-times"></i><a href="/">Home</a></li>
+      <li><a href="/stories">Stories</a></li>
+      <li><a href="/logout">Logout</a></li>
+      <li><a href="#">Contact Us</a></li>
+    </div>
+    
+    <div class="pcont scont">
+        <div class="container">
+            <h3>Edit your blog on <%= blog.name %></h3>
+            <form action="/stories/<%= blog._id %>/?_method=PUT" method="POST">
+                <div class="form-group">
+                  <label for="exampleInputEmail1">Name</label>
+                  <input type="text" name="blog[name]" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" value="<%= blog.name %>" required>
+                </div>
+                <div class="form-group">
+                  <label for="exampleInputPassword1">Image Url</label>
+                  <input type="text" name="blog[image]" class="form-control" id="exampleInputPassword1" value="<%= blog.image %>" required>
+                </div>
+                <div class="form-group">
+                    <label for="exampleFormControlTextarea1">Story</label>
+                    <textarea name="blog[body]" class="form-control" id="exampleFormControlTextarea1" rows="3" required><%= blog.body%></textarea>
+                  </div>
+                <button type="submit" class="btn btn-dark">Edit</button>
+              </form>
+        
+        </div>
+        </div>
+        <div id="last">
+            <div id="end">
+                <p>Follow Us On </p>
+                <i class="fab fa-facebook-square fa-lg"></i><i class="fab fa-twitter fa-lg"></i><i class="fab fa-pinterest fa-lg"></i>
+            </div>
+        </div>
+    
+    <script src="/jsstories.js"></script>
+</body>
+</html>
